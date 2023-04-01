@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "../Shared/_Layout";
+}
+
+<div class="flex-shrink-0">
+    <div class="interface-header container-fluid text-end bg-light-gray">
+        <div class="display-6 fw-semibold me-4">@ViewBag.Title</div>
+    </div>
+    <div class="bd-main-interface">
+        <main class="bd-interface-body justify-content-md-center">
+            <!--Word of the day and statistics of how many words exist of each category.-->
+            <div class="container-fluid" id="top-section">
+                <div class="row pb-4">
+                    <div class="col-lg-4" id="word-of-the-day">
+                        <div class="card m-4 text-center text-muted h-100">
+                            <div class="card-header">
+                                <h2>Word of the Day</h2>
+                            </div>
+                            <div class="card-body">
+                                <div id="new-word">
+                                    <p class="display-5">TBD</p>
+                                    <p class="display-6">There is no definition for this word.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card m-4 text-center text-muted h-100">
+                            <div class="card-header">
+                                <h2>Stats</h2>
+                            </div>
+                            <div class="card-body">
+                                <!--Show all Stats Here-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-lg-auto pt-4 h-100">
+                    <div class="card m-4 text-center text-muted ">
+                        <div class="card-header">
+                            <h4 class="float-start">Recent Searches</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group" id="search-list">
+                                <li class="list-group-item"><p class="text-start ms-3">Search Entry 1</p></li>
+                                <li class="list-group-item"><p class="text-start ms-3">Search Entry 2</p></li>
+                                <li class="list-group-item"><p class="text-start ms-3">Search Entry 3</p></li>
+                                <li class="list-group-item"><p class="text-start ms-3">Search Entry 4</p></li>
+                                <li class="list-group-item"><p class="text-start ms-3">Search Entry 5</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Recent Searches (Max is 100)-->
+            <div class="container-fluid" id="recent-search-section">
+
+            </div>
+
+        </main>
+    </div>
+</div>
