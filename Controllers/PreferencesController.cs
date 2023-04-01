@@ -2,7 +2,7 @@
 
 namespace OsuryuhaanDictionaryAppProj.Controllers
 {
-    public class PreferenceController : Controller
+    public class PreferencesController : Controller
     {
         public IActionResult Index()
         {

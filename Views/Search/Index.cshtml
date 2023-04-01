@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Search";
+    Layout = "../Shared/_Layout";
+}
+
+<div class="flex-shrink-0">
+    <div class="bd-main-interface">
+        <main class="bd-interface-body h-100 justify-content-md-center">
+            <div class="container-fluid d-flex justify-content-md-center mb-4" id="searchbar">
+                <div class="btn-toolbar" role="toolbar" aria-label="SearchBar" >
+                    <div class="input-group" style="width: 75vw;">
+                            <input type="text" class="form-control rounded-pill" placeholder="Enter a sentence or word in Kayanese or in English." aria-label="Searchbar">
+                            <button class="btn justify-content-center position-relative" type="button">Clear</button>
+                            <button class="btn btn-primary rounded-pill position-relative" type="button">Go</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card row flex-row flex-column h-100">
+                <div class="card-header d-inline">
+                    <h4>Results</h4>
+                </div>
+                <div class="card-body">
+                    <div class="container-fluid justify-content-md-center" id="search-query">
+                        <div class="list-group list-group-flush">
+                            Search Query Empty...
+                        </div>
+                    </div>      
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
